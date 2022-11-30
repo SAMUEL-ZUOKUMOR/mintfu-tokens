@@ -60,7 +60,7 @@ async function createTokenAccount(
     return tokenAccount
 }
 
-/*create token metadata function
+//create token metadata function
 async function createTokenMetadata(
 	connection: web3.Connection,
 	metaplex: Metaplex,
@@ -126,7 +126,7 @@ async function createTokenMetadata(
 	
 	console.log(`Create Metadata Account: https://explorer.solana.com/tx/${transactionSignature}?cluster=devnet`);
 	
-}*/
+}
 
 //function to update metadata account
 async function updateTokenMetadata(
@@ -262,7 +262,7 @@ async function main() {
 	})
   )
   
- /* await createTokenMetadata(
+   await createTokenMetadata(
 	connection,
 	metaplex,
 	new web3.PublicKey(MINT_ADDRESS),
@@ -282,7 +282,7 @@ async function main() {
 	"Grab the ninja mintfus to gain access to my ninja house party"
   )
 
- /* const mint = await createNewMint(
+  const mint = await createNewMint(
     connection,
     user,           // We'll pay the fees
     user.publicKey, // We're the mint authority
@@ -308,7 +308,7 @@ async function main() {
   
   // Mint 100 tokens to our address
   await mintTokens(connection, user, mint, tokenAccount.address, user, 100);
-  await transferTokens(connection, user, tokenAccount.address, recipientTokenAccount.address, user.publicKey, 50, mint);*/
+  await transferTokens(connection, user, tokenAccount.address, recipientTokenAccount.address, user.publicKey, 50, mint);
 }
 
 main()
